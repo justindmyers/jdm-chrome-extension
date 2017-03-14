@@ -1,0 +1,10 @@
+<md-content class="top-sites">
+    <ol>
+        <li ng-repeat="site in $ctrl.mostVisitedURLs | limitTo: 10">
+            <a ng-href="site.url">
+                <img ng-src="https://plus.google.com/_/favicon?domain_url={{ site.url }}" />
+                {{ site.title }}
+            </a>
+        </li>
+    </ol>
+</md-content>
